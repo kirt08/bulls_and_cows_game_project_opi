@@ -1,0 +1,50 @@
+.page_3 {
+    display: none; /* скрываем по умолчанию */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: var(--normal-font-family);
+}
+
+.page_3_header {
+    font-size: var(--font-size-header2);
+    margin-bottom: 1.5rem;
+}
+
+.page_3_back_button {
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #00FF7F;
+    color: #000;
+    font-weight: bold;
+}
+
+.page_3_table_wrapper {
+    width: 100%;
+    max-width: 600px;
+    overflow-x: auto;
+}
+
+.page_3_table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.page_3_table th, .page_3_table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #fff;
+}
+
+.page_3_table th {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+}

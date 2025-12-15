@@ -1,0 +1,133 @@
+.page_2 {
+    flex: 1;
+    width: 80%;
+
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.page_2_header_for_roomid {
+    margin-top: 2rem;
+    font-family: var(--header-font);
+    font-size: var(--font-size-header2);
+    text-align: center;
+}
+
+.page_2_cancel_button {
+    align-self: flex-end;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    font-family: var(--normal-font-family);
+    font-size: 1rem;
+    color: var(--font-color);
+    background-color: #928E94;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.5s ease, transform 0.2s ease;
+}
+
+.page_2_cancel_button:hover {
+    background-color: #0f766e;
+    transform: translateY(-2px);
+}
+
+.page_2_chat {
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 200px;
+    width: 90%;
+    border-radius: 12px;
+    overflow-y: auto;
+    padding: 0.5rem;
+}
+
+#messages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page_2_chat ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.page_2_chat li {
+    padding: 0.5rem 1rem;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 8px;
+    word-wrap: break-word;
+}
+
+.page_2_form_for_messages {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+.input_and_button {
+    width: 100%;
+}
+
+.page_2_form_input {
+    width: 69%;
+    height: 100%;
+    padding: 0.6rem 1rem;
+    font-family: var(--normal-font-family);
+    font-size: var(--font-size-normal);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-color: rgba(255,255,255,0.1);
+    color: var(--font-color);
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.page_2_form_input:focus {
+    border-color: #0f766e;
+    background-color: rgba(255,255,255,0.15);
+}
+
+.page_2_form_button {
+    height: 100%;   
+    width: 30%;
+    font-size: 1rem;
+    font-family: var(--normal-font-family);
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+    border: 2px solid rgb(131, 120, 110);
+    border-radius: 10px;
+
+    background-image: linear-gradient(
+        135deg,
+        #928E94 0%,
+        #928E94 50%,
+        #0f766e 50%,
+        #0f766e 100%
+    );
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+    transition: background-position 0.9s cubic-bezier(.4,0,.2,1), transform 0.2s ease;
+}
+
+.page_2_form_button:hover {
+    background-position: 100% 100%;
+}
+
+

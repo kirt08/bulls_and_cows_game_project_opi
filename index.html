@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Быки и Коровы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="page1_style.css">
+    <link rel="stylesheet" href="page2_style.css">
+    <link rel="stylesheet" href="page3_style.css">
+    <script src="script.js" defer></script>
+    <script src="script_3.js" defer></script>
+</head>
+<body>
+    <div class="title_bar">
+        <h1>Добро пожаловать!</h1>
+        <h2>Игра "Быки и Коровы"</h2>
+    </div>
+    <div class="page_1">
+        <div class="page_1_buttons">
+            <button class="page_1_button_create_room">
+                Создать новую комнату
+            </button>
+            <button class="page_1_button_connect_to_existing_room">
+                Подключиться к существующей комнате
+            </button>
+        </div>
+        <form class="page_1_form_connection">
+            <label class="page_1_form_label">
+                Введите ID комнаты: <input 
+                                        type="text"
+                                        class="page_1_form_input"
+                                        id="InputRoomId"
+                                        autocomplete="off">
+            </label>
+            <p class="page_1_form_error" id="roomError"></p>
+            <button class="page_1_form_button">Подключиться</button>
+        </form>
+        <button class="page_1_button_show_records">Рекорды</button>
+    </div>
+    <div class="page_2">
+        <h2 class="page_2_header_for_roomid"></h2>
+        <button class="page_2_cancel_button">Завершить. Отключиться</button>
+        <div class="page_2_chat">
+            <ul id="messages"></ul>
+        </div>
+        <form class="page_2_form_for_messages">
+            <label class="page_2_form_label">
+                Введите слово:
+            </label>
+            <div class="input_and_button">
+                <input  type="text" 
+                        class="page_2_form_input"
+                        id="messageText"
+                        autocomplete="off">
+                <button class="page_2_form_button"
+                        id="send_message">
+                    Отправить
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="page_3">
+        <h2 class="page_3_header">Таблица рекордов</h2>
+        <button class="page_3_back_button">Назад в меню</button>
+
+        <div class="page_3_table_wrapper">
+            <table class="page_3_table">
+                <thead>
+                    <tr>
+                        <th>Место</th>
+                        <th>Имя игрока</th>
+                        <th>Попытки</th>
+                    </tr>
+                </thead>
+                <tbody id="records_table_body"></tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

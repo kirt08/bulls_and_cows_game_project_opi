@@ -1,0 +1,193 @@
+.page_1 {
+    flex: 1;
+    width: 80%;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.page_1_buttons {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.page_1_button_create_room,
+.page_1_button_connect_to_existing_room {
+    margin-top: 5rem;
+    height: 30%;
+    width: 35%;
+    border-radius: 60px;
+
+    position: relative;
+    overflow: hidden;
+
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+    transition:
+        background-position 1.5s cubic-bezier(.4,0,.2,1),
+        transform 0.3s ease;
+}
+
+.page_1_button_create_room {
+    background-image: linear-gradient(
+        135deg,
+        #5D5C61 0%,
+        #5D5C61 50%,
+        #0f766e 50%,
+        #0f766e 100%
+    );
+    color: var(--font-color);
+    font-size: var(--font-size-normal);
+    font-weight: bold;
+    border: 2px solid rgb(131, 120, 110);
+}
+
+.page_1_button_connect_to_existing_room {
+    background-image: linear-gradient(
+        135deg,
+        #5D5C61 0%,
+        #5D5C61 50%,
+        #0f766e 50%,
+        #0f766e 100%
+    );
+    color: var(--font-color);
+    font-size: var(--font-size-normal);
+    font-weight: bold;
+    border: 2px solid rgb(131, 120, 110);
+}
+
+.page_1_button_create_room:hover,
+.page_1_button_connect_to_existing_room:hover {
+    background-position: 100% 100%;
+    transform: scale(1.03);
+}
+
+.page_1_form_connection {
+    width: 50%;
+    padding: 2rem;
+
+    margin-left: auto;
+    margin-right: 0;
+
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    font-family: var(--normal-font-family);
+    font-size: var(--font-size-normal);
+
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.page_1_form_label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    color: var(--font-color);
+}
+
+.page_1_form_input {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    font-family: var(--normal-font-family);
+
+    color: var(--font-color);
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+    outline: none;
+
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.page_1_form_input:focus {
+    border-color: #0f766e;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.page_1_form_button {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-family: var(--normal-font-family);
+    font-weight: 600;
+
+    color: var(--font-color);
+    cursor: pointer;
+
+    border: none;
+    border-radius: 12px;
+
+    background-image: linear-gradient(
+        135deg,
+        #928E94 0%,
+        #928E94 50%,
+        #0f766e 50%,
+        #0f766e 100%
+    );
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+
+    transition:
+        background-position 0.9s cubic-bezier(.4,0,.2,1),
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.page_1_form_button:hover {
+    background-position: 100% 100%;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.page_1_form_button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.page_1_form_error {
+    margin: 0;
+    min-height: 1.2em;
+    
+    font-size: 0.9rem;
+    color: #ff6b6b;
+
+    opacity: 0;
+    transform: translateY(-4px);
+
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.page_1_form_error.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.page_1_button_show_records {
+    position: absolute;      /* фиксируем относительно страницы */
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #00FF7F;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    z-index: 100;
+}
+
+.page_1_button_show_records:hover {
+    background-color: #00cc66;
+    transform: scale(1.05);
+}

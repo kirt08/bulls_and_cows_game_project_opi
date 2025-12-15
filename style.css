@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Fonts */
+    --header-font: "Ruslan Display", sans-serif;
+    --normal-font-family: "Shantell Sans", cursive;
+
+    --font-size-header1: 5rem;
+    --font-size-header2: 2.5rem;
+    --font-size-normal: 1.2rem;
+
+    /* Colors */
+    --bg-color: #557A95;
+    --font-color: #ffffff;
+
+    /* border */
+    --testing-border: 2px solid black;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--normal-font-family);
+    color: var(--font-color);
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    height: 90vh;
+}
+
+.title_bar {
+    padding: 2rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.title_bar h1 {
+    font-size: var(--font-size-header1);
+}
+
+.title_bar h2 {
+    margin: 1rem;
+    font-size: var(--font-size-header2);
+    font-family: var(--header-font);
+}
+
+
